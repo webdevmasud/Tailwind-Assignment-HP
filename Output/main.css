@@ -1,0 +1,67 @@
+/* ===== Custom font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* ===== custom scrollbar ===== */
+    .scrollbar::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .scrollbar::-webkit-scrollbar-thumb {
+        background-color: #ef4444;
+        border-radius: 8px;
+    }
+    .scrollbar::-webkit-scrollbar-thumb:hover{
+        background-color: #4ade80;
+        transition: all 3s linear;
+    }
+    
+    .scrollbar::-webkit-scrollbar-track {
+        background-color: rgb(223, 215, 215);
+    }
+    .scrollbar-dark::-webkit-scrollbar-track{
+        background-color: #334155;
+    }
+    /* ===== custom scrollbar ===== */
+
+
+    .logo-img{
+        @apply h-[46px] w-[138px] cursor-pointer bg-[url('/Assets/logo.webp')] bg-no-repeat bg-cover dark:bg-[url('/Assets/logo-white.webp')]
+    }
+
+    .item-shadow{
+        @apply bg-white rounded-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] p-5 hover:shadow-[0_4px_4px_2px_rgba(0,0,0,0.25)] hover:scale-[1.02] transition-all dark:bg-slate-900 dark:text-white dark:shadow-white/25
+    }
+
+    .tag-1{
+        @apply py-1.5 px-3 border-red-500 border rounded-full hover:bg-red-500 hover:text-white transition-all
+    }
+
+    .jobs-name{
+        @apply hover:underline transition-all duration-300 dark:text-white
+    }
+
+    .tag-2{
+        @apply py-1.5 px-8 uppercase border-black border rounded-full hover:bg-green-400 transition-all dark:border-white dark:text-white dark:hover:text-black
+    }
+
+    .course-card{
+        @apply container mx-auto grid grid-cols-12 rounded-xl shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] hover:shadow-[0_4px_4px_2px_rgba(0,0,0,0.25)] hover:scale-[1.02] transition-all duration-300 dark:shadow-white/25
+    }
+
+    .course-tag{
+        @apply text-xs py-1.5 px-4 border-red-500 border rounded-full hover:bg-red-500 hover:text-white transition-all
+    }
+
+    .footer-link-1{
+        @apply text-lg font-semibold opacity-100 hover:opacity-80 hover:underline hover:decoration-black/80 transition-all cursor-pointer
+    }
+    .footer-link-2{
+        @apply opacity-80 hover:opacity-100 hover:underline hover:decoration-black/80 transition-all cursor-pointer
+    }
+}

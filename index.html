@@ -1,11 +1,890 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-jakarta dark" id="htmlDoc">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creatives For You</title>
+
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="Output/main.css">
 </head>
-<body>
-  
+<body class="dark:bg-slate-900 scrollbar dark:scrollbar-dark">
+    <!-- ======= Header section start ======= -->
+    <header class="px-3 md:px-8 xl:px-12 py-3 sticky top-0 backdrop-blur-md border-b border-b-white/50 dark:bg-slate-900/40 dark:border-b-black/30 shadow-md dark:shadow-white/5 bg-white/40 z-20">
+        <nav class="flex justify-between items-center">
+            <div class="logo-img scale-90 sm:scale-100"></div>
+            <div class="items-center gap-4 md:gap-6 hidden ml:flex">
+                <a href="#" class="hover:text-red-500 transition-colors dark:text-white dark:hover:text-red-500">Home</a>
+                <a href="#" class="hover:text-red-500 transition-colors dark:text-white dark:hover:text-red-500">About Us</a>
+                <a href="#" class="text-red-500">Up-skill</a>
+                <a href="#" class="dark:text-white dark:hover:text-red-500 hover:text-red-500 transition-colors  ">Contact Us</a> 
+            </div>
+            <div class="flex items-center gap-3 md:gap-6">
+                <button class="bg-red-500 text-white py-2.5 px-5 rounded-lg hidden sm:block hover:bg-red-600 hover:scale-105 hover:shadow-md transition-all">Register Interest</button>
+
+                <!-- Menu bar -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 ml:hidden hover:scale-105 transition-all cursor-pointer dark:stroke-white hover:stroke-red-500 dark:hover:stroke-red-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+                
+                <!-- Dark mode toggle - Moon -->
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="scale-90 sm:scale-100 hover:scale-105 transition-all stroke-black hover:stroke-red-500 dark:stroke-white dark:hover:stroke-red-500 cursor-pointer" id="switch" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.4407 21.7534C28.5585 22.5378 26.5391 22.9404 24.5 22.9377C15.9738 22.9377 9.0625 16.0265 9.0625 7.50024C9.0625 5.3944 9.48367 3.38832 10.2468 1.55957C7.43399 2.733 5.03128 4.71255 3.34133 7.24889C1.65137 9.78524 0.749739 12.7649 0.75 15.8127C0.75 24.339 7.66125 31.2502 16.1875 31.2502C19.2353 31.2505 22.215 30.3489 24.7513 28.6589C27.2877 26.969 29.2672 24.5662 30.4407 21.7534Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </div>
+        </nav>
+    </header>
+    <!-- ======= Header section End ======= -->
+
+
+    <!-- ======= hero section Start ======= -->
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 py-5 dark:bg-slate-800 dark:text-white">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center lg:items-start">
+            <div class="col-span-1">
+                <h4 class="text-lg font-semibold mt-4 md:mt-8 mb-4 ">Discover <span class="text-red-500">-</span>Interact <span class="text-red-500">-</span>Engage</h4>
+                <h1 class="text-6xl font-bold leading-snug">Google <br> <span class="text-red-500 border-b-4 border-b-red-500">IT Support</span><br>Certificate</h1>
+                <p class="text-lg my-8 md:my-12">This is your path to a career in IT. &nbsp;In this program, &nbsp;you’ll learn in-demand skills with no degree or experience required.</p>
+
+                <div class="flex gap-8 flex-wrap md:flex-nowrap">
+                    <div class="text-center">
+                        <span class="text-green-400 text-2xl font-semibold">438</span> <p>Videos</p>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-green-400 text-2xl font-semibold">151</span> <p>Readings</p>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-green-400 text-2xl font-semibold">108</span> <p>Quizzes</p>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-green-400 text-2xl font-semibold">24</span> <p>Exercises</p>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-green-400 text-2xl font-semibold">4</span> <p>Assignments</p>
+                    </div>
+                </div>
+
+                <div class="space-x-6 mt-8">
+                    <button class="py-2.5 px-5 bg-red-500 text-white rounded-lg hover:bg-red-600 hover:scale-105 hover:shadow-md transition-all">Sign up</button>
+                    <button class="py-2.5 px-5 bg-white border rounded-lg hover:border-red-500 hover:scale-105 hover:shadow-md transition-all dark:text-black">Learn more</button>
+                </div>
+            </div>
+            <div class="col-span-1 hidden md:block">
+                <img src="Assets/nav-img.webp" alt="image" class="w-full">
+            </div>
+        </div>
+    </section>
+    <!-- ======= hero section End ======= -->
+
+
+    <!-- ======= logo section Start ======= -->
+    <section class="px-3 md:px-8 lg:px-16 py-5">
+        <div class="container mx-auto flex justify-evenly items-center ">
+            <div>
+                <p class="font-medium hidden lg:block dark:text-white">Pave your path to career success by <br> gaining  a  professional  Google <br>certificate with the support of C4U</p>
+            </div>
+            <div class="border-e-2 border-e-red-100 h-32 hidden lg:block dark:opacity-60"></div>
+            <div>
+                <img src="Assets/Google.webp" alt="image">
+            </div>
+            <div class="border-e-2 border-e-red-100 sm:h-32 dark:opacity-60"></div>
+            <div>
+                <div class="sm:h-[137px] sm:w-[149px] h-[96px] w-[104px] bg-[url('/Assets/Work_&_Pensions.webp')] bg-no-repeat bg-cover dark:bg-[url('/Assets/Work_&_Pensions-white.webp')]"></div>
+            </div>
+            <div class="border-e-2 border-e-red-100 sm:h-32 dark:opacity-60"></div>
+            <div>
+                <div class="sm:h-[46px] sm:w-[138px] h-[39px] w-[117px] scale-75 sm:scale-100 bg-[url('/Assets/logo.webp')] bg-no-repeat bg-cover dark:bg-[url('/Assets/logo-white.webp')]"></div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= logo section End ======= -->
+
+    <!-- ======= what you learn section Start ======= -->
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pt-20 pb-10 dark:bg-slate-800">
+        <div class="container mx-auto grid md:grid-cols-2 gap-5">
+            <div class="item-shadow">
+                <div class="border-b-2 border-b-red-100 mb-2">
+                    <h1 class="text-2xl font-semibold pb-4">What you will learn</h1>
+                </div>
+                <div>
+                    <div class="flex items-start py-5 space-x-4">
+                        <img src="Assets/Checkmark.webp" alt="image">
+                        <p>Gain skills required to succeed in an entry-level IT job</p>
+                    </div>
+                    <div class="flex items-start py-5 space-x-4">
+                        <img src="Assets/Checkmark.webp" alt="image">
+                        <p> Learn to perform day-to-day IT support tasks including computer assembly, wireless networking, installing programs, and customer service</p>
+                    </div>
+                    <div class="flex items-start py-5 space-x-4">
+                        <img src="Assets/Checkmark.webp" alt="image">
+                        <p>Learn how to provide end-to-end customer support, ranging from identifying problems to troubleshooting and debugging</p>
+                    </div>
+                    <div class="flex items-start py-5 space-x-4">
+                        <img src="Assets/Checkmark.webp" alt="image">
+                        <p>Learn to use systems including Linux, Domain Name Systems, Command-Line Interface, and Binary Code</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-shadow">
+                <img src="Assets/IT_social 1.webp" alt="image" class="rounded-xl">
+                <div class="border-b-2 border-b-red-100 my-2">
+                    <h1 class="text-2xl font-semibold pb-4">Skills you will gain</h1>
+                </div>
+
+                <div class="flex flex-wrap gap-x-2 gap-y-5 pt-4 pb-2">
+                    <button class="tag-1">Debugging</button>
+                    <button class="tag-1">Customer Service</button>
+                    <button class="tag-1">Customer Support</button>
+                    <button class="tag-1">Domain Name System (DNS)</button>
+                    <button class="tag-1">Network Model</button>
+                    <button class="tag-1">Linux</button>
+                    <button class="tag-1">Encryption Algorithms and Techniques</button>
+                    <button class="tag-1">Network Protocols</button>
+                    <button class="tag-1">Ipv4</button>
+                    <button class="tag-1">Troubleshooting</button>
+                    <button class="tag-1">Binary Code</button>
+                    <button class="tag-1">Cloud Computing</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= what you learn section End ======= -->
+
+    <!-- =======  jobs section Start ======= -->
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pt-10 pb-20 dark:bg-slate-800">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row gap-5">
+            <div class="item-shadow basis-1/2">
+                <div class="border-b-2 border-b-red-100 mb-2">
+                    <h1 class="text-2xl font-semibold pb-4">Jobs Associated with Certificate</h1>
+                </div>
+                <div class="grid grid-cols-2 pt-5">
+                    <div class="space-y-5">
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">Database administrator</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">Tech support specialist</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">IT specialist</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">Systems analyst</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">Network engineer</a>
+                        </div>
+                    </div>
+                    <div class="space-y-5">
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">Help desk technician</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">IT support spcialist</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">IT technician</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">Computer user specialist</a>
+                        </div>
+                        <div class="flex gap-4">
+                            <svg width="18" height="24" viewBox="0 0 18 24" fill="black" class="dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.0607 13.0607C17.6464 12.4749 17.6464 11.5251 17.0607 10.9393L7.51472 1.3934C6.92893 0.807611 5.97918 0.807611 5.3934 1.3934C4.80761 1.97919 4.80761 2.92893 5.3934 3.51472L13.8787 12L5.3934 20.4853C4.80761 21.0711 4.80761 22.0208 5.3934 22.6066C5.97918 23.1924 6.92893 23.1924 7.51472 22.6066L17.0607 13.0607ZM0 13.5H16V10.5H0V13.5Z"/>
+                            </svg>
+                            <a href="" class="jobs-name">IT assistant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-shadow basis-1/2">
+                <img src="Assets/IT support.webp" alt="image" class="w-full">
+            </div>
+        </div>
+    </section>
+    <!-- =======  jobs section End ======= -->
+
+    <!-- =======  Courses section Start ======= -->
+    <section class="bg-white px-3 md:px-8 lg:px-16 py-10 ml:py-0 dark:bg-slate-900">      
+        <div class="container mx-auto grid grid-cols-12 items-center relative">
+            <div class="absolute bottom-10 border-b-2 border-b-red-100 w-full hidden ml:block"></div>
+
+            <div class="col-span-12 ml:col-span-8">
+                <h1 class="text-2xl sm:text-4xl lg:text-5xl font-semibold mb-10 leading-snug dark:text-white">
+                    There are 5 Courses in this <br>Professional Certificate
+                </h1>
+                <div class=" flex gap-x-10 gap-y-6 flex-wrap">
+                    <button class="tag-2 bg-green-400 dark:text-black">Course 1</button>
+                    <button class="tag-2">Course 2</button>
+                    <button class="tag-2">Course 3</button>
+                    <button class="tag-2">Course 4</button>
+                    <button class="tag-2">Course 5</button>
+                </div>
+            </div>
+
+            <div class="col-span-4 z-10 hidden ml:block">
+                <img src="Assets/certificate.webp" alt="image">
+            </div>
+        </div>  
+    </section> 
+    <!-- =======  Courses section End ======= -->
+
+    <!-- =======  Course-1 section Start ======= -->
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 py-20 dark:bg-slate-800">
+        <div class="course-card">
+            <div class="col-span-12 ml:col-span-3 bg-[#2D3142] p-5 pe-8 pb-8 flex flex-col justify-between rounded-t-xl ml:rounded-tr-none ml:rounded-s-xl">
+                <div>
+                    <p class="text-xs text-green-400 mb-4">Course 1</p>
+                    <h1 class="text-2xl font-semibold text-white mb-6">Technical Support Fundamentals</h1>
+                    <div class="flex justify-between mb-6">
+                        <p class="text-xs text-green-400">132,411 ratings</p>
+                        <div class="flex items-center gap-0 xl:gap-1">
+                            <svg width="63" height="18" viewBox="0 0 63 18" fill="none" class="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0L6.02963 2.60796L9 3.24671L6.975 5.49727L7.28115 8.5L4.5 7.28296L1.71885 8.5L2.025 5.49727L0 3.24671L2.97037 2.60796L4.5 0Z" fill="#FFCB45"/>
+                                <path d="M16.5 0L18.0296 2.60796L21 3.24671L18.975 5.49727L19.2812 8.5L16.5 7.28296L13.7188 8.5L14.025 5.49727L12 3.24671L14.9704 2.60796L16.5 0Z" fill="#FFCB45"/>
+                                <path d="M28.5 0L30.0296 2.60796L33 3.24671L30.975 5.49727L31.2812 8.5L28.5 7.28296L25.7188 8.5L26.025 5.49727L24 3.24671L26.9704 2.60796L28.5 0Z" fill="#FFCB45"/>
+                                <path d="M40.5 0L42.0296 2.60796L45 3.24671L42.975 5.49727L43.2812 8.5L40.5 7.28296L37.7188 8.5L38.025 5.49727L36 3.24671L38.9704 2.60796L40.5 0Z" fill="#FFCB45"/>
+                                <path d="M52.5 0L54.0296 2.60796L57 3.24671L54.975 5.49727L55.2812 8.5L52.5 7.28296L49.7188 8.5L50.025 5.49727L48 3.24671L50.9704 2.60796L52.5 0Z" fill="#FFCB45"/>
+                                </svg>
+                            <p class="text-xs text-[#FFCB45] mb-2">4.8</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <button class="bg-red-500 text-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-red-600 transition-all">Sign Up</button>
+                        <button class="bg-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-gray-200 transition-all">Next</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-[10px] text-gray-200 font-light mt-10">When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. </p>
+                </div>
+            </div>
+
+
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
+                    <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">What you will learn</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand how the binary system works</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Learn how applications are created and how they work under the hood of a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Utilize common problem-solving methodologies and soft skills in an Information Technology setting</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Assemble a computer from scratch</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Choose and install an operating system on a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand what the Internet is, how it works, and the impact it has in the modern world</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Skills you will gain</h4>
+                    <div class="space-x-8 space-y-4">
+                        <button class="course-tag">Binary Code</button>
+                        <button class="course-tag">Troubleshooting</button>
+                        <button class="course-tag">Customer Support</button>
+                        <button class="course-tag">Linux</button>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Information</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Flexible deadlines</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Shareable Certificate</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">100% online</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Beginner Level</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Approx. 20 hours to complete</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =======  Course-1 section End ======= -->
+
+    <!-- =======  Course-2 section Start ======= -->
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pt-36 relative dark:bg-slate-800">
+        <img src="Assets/Connector Vector.webp" alt="image" class="absolute -top-10 md:-top-28 lg:-top-44 xl:-top-72 z-10 right-1/2 translate-x-1/2 container px-3 md:px-8 lg:px-16">
+
+        <div class="course-card">
+            <div class="col-span-12 ml:col-span-3 bg-[#2D3142] p-5 pe-8 pb-8 flex flex-col justify-between rounded-t-xl ml:rounded-tr-none ml:rounded-s-xl">
+                <div>
+                    <p class="text-xs text-green-400 mb-4">Course 2</p>
+                    <h1 class="text-2xl font-semibold text-white mb-6">The Bits and Bytes of Computer Networking</h1>
+                    <div class="flex justify-between mb-6">
+                        <p class="text-xs text-green-400">132,411 ratings</p>
+                        <div class="flex items-center gap-0 xl:gap-1">
+                            <svg width="63" height="18" viewBox="0 0 63 18" fill="none" class="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0L6.02963 2.60796L9 3.24671L6.975 5.49727L7.28115 8.5L4.5 7.28296L1.71885 8.5L2.025 5.49727L0 3.24671L2.97037 2.60796L4.5 0Z" fill="#FFCB45"/>
+                                <path d="M16.5 0L18.0296 2.60796L21 3.24671L18.975 5.49727L19.2812 8.5L16.5 7.28296L13.7188 8.5L14.025 5.49727L12 3.24671L14.9704 2.60796L16.5 0Z" fill="#FFCB45"/>
+                                <path d="M28.5 0L30.0296 2.60796L33 3.24671L30.975 5.49727L31.2812 8.5L28.5 7.28296L25.7188 8.5L26.025 5.49727L24 3.24671L26.9704 2.60796L28.5 0Z" fill="#FFCB45"/>
+                                <path d="M40.5 0L42.0296 2.60796L45 3.24671L42.975 5.49727L43.2812 8.5L40.5 7.28296L37.7188 8.5L38.025 5.49727L36 3.24671L38.9704 2.60796L40.5 0Z" fill="#FFCB45"/>
+                                <path d="M52.5 0L54.0296 2.60796L57 3.24671L54.975 5.49727L55.2812 8.5L52.5 7.28296L49.7188 8.5L50.025 5.49727L48 3.24671L50.9704 2.60796L52.5 0Z" fill="#FFCB45"/>
+                                </svg>
+                            <p class="text-xs text-[#FFCB45] mb-2">4.8</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <button class="bg-red-500 text-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-red-600 transition-all">Sign Up</button>
+                        <button class="bg-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-gray-200 transition-all">Next</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-[10px] text-gray-200 font-light mt-10">When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. </p>
+                </div>
+            </div>
+
+
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
+                    <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">What you will learn</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand how the binary system works</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Learn how applications are created and how they work under the hood of a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Utilize common problem-solving methodologies and soft skills in an Information Technology setting</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Assemble a computer from scratch</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Choose and install an operating system on a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand what the Internet is, how it works, and the impact it has in the modern world</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Skills you will gain</h4>
+                    <div class="space-x-8 space-y-4">
+                        <button class="course-tag">Binary Code</button>
+                        <button class="course-tag">Troubleshooting</button>
+                        <button class="course-tag">Customer Support</button>
+                        <button class="course-tag">Linux</button>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Information</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Flexible deadlines</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Shareable Certificate</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">100% online</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Beginner Level</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Approx. 20 hours to complete</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =======  Course-2 section End ======= -->
+
+    <!-- =======  Course-3 section Start ======= -->
+    <div class="bg-[#FAFAFA] px-6 md:px-8 lg:px-16 dark:bg-slate-800">
+        <img src="Assets/Connector Vector (1).webp" alt="image" class="container mx-auto relative z-10">
+    </div>
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 dark:bg-slate-800 pb-2">
+        <div class="course-card">
+            <div class="col-span-12 ml:col-span-3 bg-[#2D3142] p-5 pe-8 pb-8 flex flex-col justify-between rounded-t-xl ml:rounded-tr-none ml:rounded-s-xl">
+                <div>
+                    <p class="text-xs text-green-400 mb-4">Course 3</p>
+                    <h1 class="text-2xl font-semibold text-white mb-6">Operating Systems and You: Becoming a Power User</h1>
+                    <div class="flex justify-between mb-6">
+                        <p class="text-xs text-green-400">132,411 ratings</p>
+                        <div class="flex items-center gap-0 xl:gap-1">
+                            <svg width="63" height="18" viewBox="0 0 63 18" fill="none" class="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0L6.02963 2.60796L9 3.24671L6.975 5.49727L7.28115 8.5L4.5 7.28296L1.71885 8.5L2.025 5.49727L0 3.24671L2.97037 2.60796L4.5 0Z" fill="#FFCB45"/>
+                                <path d="M16.5 0L18.0296 2.60796L21 3.24671L18.975 5.49727L19.2812 8.5L16.5 7.28296L13.7188 8.5L14.025 5.49727L12 3.24671L14.9704 2.60796L16.5 0Z" fill="#FFCB45"/>
+                                <path d="M28.5 0L30.0296 2.60796L33 3.24671L30.975 5.49727L31.2812 8.5L28.5 7.28296L25.7188 8.5L26.025 5.49727L24 3.24671L26.9704 2.60796L28.5 0Z" fill="#FFCB45"/>
+                                <path d="M40.5 0L42.0296 2.60796L45 3.24671L42.975 5.49727L43.2812 8.5L40.5 7.28296L37.7188 8.5L38.025 5.49727L36 3.24671L38.9704 2.60796L40.5 0Z" fill="#FFCB45"/>
+                                <path d="M52.5 0L54.0296 2.60796L57 3.24671L54.975 5.49727L55.2812 8.5L52.5 7.28296L49.7188 8.5L50.025 5.49727L48 3.24671L50.9704 2.60796L52.5 0Z" fill="#FFCB45"/>
+                                </svg>
+                            <p class="text-xs text-[#FFCB45] mb-2">4.8</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <button class="bg-red-500 text-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-red-600 transition-all">Sign Up</button>
+                        <button class="bg-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-gray-200 transition-all">Next</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-[10px] text-gray-200 font-light mt-10">When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. </p>
+                </div>
+            </div>
+
+
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
+                    <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">What you will learn</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand how the binary system works</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Learn how applications are created and how they work under the hood of a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Utilize common problem-solving methodologies and soft skills in an Information Technology setting</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Assemble a computer from scratch</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Choose and install an operating system on a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand what the Internet is, how it works, and the impact it has in the modern world</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Skills you will gain</h4>
+                    <div class="space-x-8 space-y-4">
+                        <button class="course-tag">Binary Code</button>
+                        <button class="course-tag">Troubleshooting</button>
+                        <button class="course-tag">Customer Support</button>
+                        <button class="course-tag">Linux</button>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Information</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Flexible deadlines</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Shareable Certificate</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">100% online</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Beginner Level</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Approx. 20 hours to complete</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =======  Course-3 section End ======= -->
+
+    <!-- =======  Course-4 section Start ======= -->
+    <div class="bg-[#FAFAFA] px-6 md:px-8 lg:px-16 dark:bg-slate-800">
+        <img src="Assets/Connector Vector (2).webp" alt="image" class="container mx-auto relative z-10">
+    </div>
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 dark:bg-slate-800 pb-2">
+        <div class="course-card">
+            <div class="col-span-12 ml:col-span-3 bg-[#2D3142] p-5 pe-8 pb-8 flex flex-col justify-between rounded-t-xl ml:rounded-tr-none ml:rounded-s-xl">
+                <div>
+                    <p class="text-xs text-green-400 mb-4">Course 4</p>
+                    <h1 class="text-2xl font-semibold text-white mb-6">System Administration and IT Infrastructure Services</h1>
+                    <div class="flex justify-between mb-6">
+                        <p class="text-xs text-green-400">132,411 ratings</p>
+                        <div class="flex items-center gap-0 xl:gap-1">
+                            <svg width="63" height="18" viewBox="0 0 63 18" fill="none" class="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0L6.02963 2.60796L9 3.24671L6.975 5.49727L7.28115 8.5L4.5 7.28296L1.71885 8.5L2.025 5.49727L0 3.24671L2.97037 2.60796L4.5 0Z" fill="#FFCB45"/>
+                                <path d="M16.5 0L18.0296 2.60796L21 3.24671L18.975 5.49727L19.2812 8.5L16.5 7.28296L13.7188 8.5L14.025 5.49727L12 3.24671L14.9704 2.60796L16.5 0Z" fill="#FFCB45"/>
+                                <path d="M28.5 0L30.0296 2.60796L33 3.24671L30.975 5.49727L31.2812 8.5L28.5 7.28296L25.7188 8.5L26.025 5.49727L24 3.24671L26.9704 2.60796L28.5 0Z" fill="#FFCB45"/>
+                                <path d="M40.5 0L42.0296 2.60796L45 3.24671L42.975 5.49727L43.2812 8.5L40.5 7.28296L37.7188 8.5L38.025 5.49727L36 3.24671L38.9704 2.60796L40.5 0Z" fill="#FFCB45"/>
+                                <path d="M52.5 0L54.0296 2.60796L57 3.24671L54.975 5.49727L55.2812 8.5L52.5 7.28296L49.7188 8.5L50.025 5.49727L48 3.24671L50.9704 2.60796L52.5 0Z" fill="#FFCB45"/>
+                                </svg>
+                            <p class="text-xs text-[#FFCB45] mb-2">4.8</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <button class="bg-red-500 text-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-red-600 transition-all">Sign Up</button>
+                        <button class="bg-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-gray-200 transition-all">Next</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-[10px] text-gray-200 font-light mt-10">When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. </p>
+                </div>
+            </div>
+
+
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
+                    <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">What you will learn</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand how the binary system works</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Learn how applications are created and how they work under the hood of a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Utilize common problem-solving methodologies and soft skills in an Information Technology setting</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Assemble a computer from scratch</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Choose and install an operating system on a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand what the Internet is, how it works, and the impact it has in the modern world</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Skills you will gain</h4>
+                    <div class="space-x-8 space-y-4">
+                        <button class="course-tag">Binary Code</button>
+                        <button class="course-tag">Troubleshooting</button>
+                        <button class="course-tag">Customer Support</button>
+                        <button class="course-tag">Linux</button>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Information</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Flexible deadlines</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Shareable Certificate</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">100% online</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Beginner Level</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Approx. 20 hours to complete</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =======  Course-4 section End ======= -->
+
+    <!-- =======  Course-5 section Start ======= -->
+    <div class="bg-[#FAFAFA] px-6 md:px-8 lg:px-16 dark:bg-slate-800">
+        <img src="Assets/Connector Vector.webp" alt="image" class="container mx-auto relative z-10">
+    </div>
+    <section class="bg-[#FAFAFA] px-3 md:px-8 lg:px-16 pb-32 dark:bg-slate-800">
+        <div class="course-card">
+            <div class="col-span-12 ml:col-span-3 bg-[#2D3142] p-5 pe-8 pb-8 flex flex-col justify-between rounded-t-xl ml:rounded-tr-none ml:rounded-s-xl">
+                <div>
+                    <p class="text-xs text-green-400 mb-4">Course 5</p>
+                    <h1 class="text-2xl font-semibold text-white mb-6">IT Security: Defense against the digital dark arts</h1>
+                    <div class="flex justify-between mb-6">
+                        <p class="text-xs text-green-400">132,411 ratings</p>
+                        <div class="flex items-center gap-0 xl:gap-1">
+                            <svg width="63" height="18" viewBox="0 0 63 18" fill="none" class="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0L6.02963 2.60796L9 3.24671L6.975 5.49727L7.28115 8.5L4.5 7.28296L1.71885 8.5L2.025 5.49727L0 3.24671L2.97037 2.60796L4.5 0Z" fill="#FFCB45"/>
+                                <path d="M16.5 0L18.0296 2.60796L21 3.24671L18.975 5.49727L19.2812 8.5L16.5 7.28296L13.7188 8.5L14.025 5.49727L12 3.24671L14.9704 2.60796L16.5 0Z" fill="#FFCB45"/>
+                                <path d="M28.5 0L30.0296 2.60796L33 3.24671L30.975 5.49727L31.2812 8.5L28.5 7.28296L25.7188 8.5L26.025 5.49727L24 3.24671L26.9704 2.60796L28.5 0Z" fill="#FFCB45"/>
+                                <path d="M40.5 0L42.0296 2.60796L45 3.24671L42.975 5.49727L43.2812 8.5L40.5 7.28296L37.7188 8.5L38.025 5.49727L36 3.24671L38.9704 2.60796L40.5 0Z" fill="#FFCB45"/>
+                                <path d="M52.5 0L54.0296 2.60796L57 3.24671L54.975 5.49727L55.2812 8.5L52.5 7.28296L49.7188 8.5L50.025 5.49727L48 3.24671L50.9704 2.60796L52.5 0Z" fill="#FFCB45"/>
+                                </svg>
+                            <p class="text-xs text-[#FFCB45] mb-2">4.8</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <button class="bg-red-500 text-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-red-600 transition-all">Sign Up</button>
+                        <button class="bg-white rounded-md text-sm py-2 px-5 hover:scale-105 hover:bg-gray-200 transition-all">Next</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-[10px] text-gray-200 font-light mt-10">When you complete all of the courses in the program, you'll earn a Certificate to share with your professional network as well as unlock access to career support resources to help you kickstart your new career. </p>
+                </div>
+            </div>
+
+
+            <div class="col-span-12 ml:col-span-9 bg-white py-5 ps-6 pe-12 rounded-b-xl ml:rounded-bl-none ml:rounded-e-xl dark:bg-slate-900 dark:text-white/90">
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">About this course</h4>
+                    <p class="text-sm">This course is the first of a series that aims to prepare you for a role as an entry-level IT Support Specialist. In this course, you’ll be introduced to the world of Information Technology, or IT. You’ll learn about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service. This course covers a wide variety of topics in IT that are designed to give you an overview of what’s to come in this certificate program.</p>
+                </div>
+                <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">What you will learn</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand how the binary system works</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Learn how applications are created and how they work under the hood of a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Utilize common problem-solving methodologies and soft skills in an Information Technology setting</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Assemble a computer from scratch</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm"> Choose and install an operating system on a computer</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="Assets/Checkmark.webp" alt="image" class="size-7">
+                            <p class="text-sm">Understand what the Internet is, how it works, and the impact it has in the modern world</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Skills you will gain</h4>
+                    <div class="space-x-8 space-y-4">
+                        <button class="course-tag">Binary Code</button>
+                        <button class="course-tag">Troubleshooting</button>
+                        <button class="course-tag">Customer Support</button>
+                        <button class="course-tag">Linux</button>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <h4 class="text-lg font-semibold text-red-300 mb-2">Information</h4>
+                    <div class="ms-2 space-y-3">
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Flexible deadlines</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Shareable Certificate</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">100% online</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Beginner Level</p>
+                        </div>
+                        <div class="flex gap-4 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-1.5 fill-red-300"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                            <p class="text-sm">Approx. 20 hours to complete</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =======  Course-5 section End ======= -->
+
+    <!-- =======  review section Start ======= -->
+    <section class="bg-[url('/Assets/workSpace-f-img.webp')] bg-no-repeat bg-cover">
+        <div class="container ps-4 md:ps-20 lg:ps-40 xl:ps-80 pt-10 pb-16 w-fit">
+            <div class="bg-white p-4 sm:p-8 w-72 rounded-xl hover:scale-105 transition-all duration-200 dark:bg-slate-900 dark:text-white dark:shadow-xl dark:shadow-white/50">
+                <img src="Assets/cotation-mark.webp" alt="image" class="w-8 mb-1.5 sm:mb-3">
+                <h4 class="text-xs font-medium sm:text-sm mb-3 sm:mb-6">
+                    I worked in retail and needed to make a change. The certificate is really designed for you to go at your own pace. This is something that anybody can do
+                </h4>
+                <p class="text-[10px] font-light sm:text-xs text-red-300">
+                    Daniel, IT Support Specialist at Central Community College and Google IT Support Certificate graduate
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- =======  review section End ======= -->
+
+    <!-- =======  footer section Start ======= -->
+    <footer class="dark:text-white">
+        <section class="px-6 md:px-10 lg:px-16">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-6 gap-y-8 ml:ps-10 py-10">
+                    <div class="col-span-6 ml:col-span-2 xl:col-span-2">
+                        <div class="logo-img mb-6"></div>
+                        <p class="opacity-80">
+                            Level39 <br>One Canada Square, <br> Canary Wharf, <br>London, E14 5AB
+                        </p>
+                    </div>
+                    <ul class="space-y-3 col-span-3  ml:col-span-2 xl:col-span-1">
+                        <li><a class="footer-link-1">Home</a>
+                        </li>
+                        <li><a class="footer-link-2">Collaborations</a>
+                        </li>
+                        <li><a class="footer-link-2">Statistics</a>
+                        </li>
+                        <li><a class="footer-link-2">How it Works</a>
+                        </li>
+                        <li><a class="footer-link-2">Testimonials</a>
+                        </li>
+                    </ul>
+                    <ul class="space-y-3 col-span-3  ml:col-span-2 xl:col-span-1">
+                        <li><a class="footer-link-1">About Us</a>
+                        </li>
+                        <li><a class="footer-link-2">Who We Are</a>
+                        </li>
+                        <li><a class="footer-link-2">Mission statement</a>
+                        </li>
+                        <li><a class="footer-link-2">Our Vision</a>
+                        </li>
+                        <li><a class="footer-link-2">The Team</a>
+                        </li>
+                    </ul>
+                    <ul class="space-y-3 col-span-3  ml:col-span-2 xl:col-span-1">
+                        <li><a class="footer-link-1">Up-skill</a>
+                        </li>
+                        <li><a class="footer-link-2">IT Support</a>
+                        </li>
+                        <li><a class="footer-link-2">Project Management</a>
+                        </li>
+                        <li><a class="footer-link-2">Data Analysis</a>
+                        </li>
+                        <li><a class="footer-link-2">Ux Design</a>
+                        </li>
+                    </ul>
+                    <ul class="space-y-3 col-span-3  ml:col-span-2 xl:col-span-1">
+                        <li><a class="footer-link-1">Contact Us</a>
+                        </li>
+                        <li><a class="footer-link-2">Your message</a>
+                        </li>
+                        <li><a class="footer-link-2">Email</a>
+                        </li>
+                        <li><a class="footer-link-2">Phone number</a>
+                        </li>
+                        <li><a class="footer-link-2">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="border-b border-b-red-100 dark:opacity-70"></div>
+        <p class="text-center opacity-80 py-3 text-sm">Copyright 2022 Quickly LTD</p>
+    </footer>
+    <!-- =======  footer section End ======= -->
+
+    <!-- =======  Dark-mode script Start ======= -->
+    <script>
+        const htmlTag = document.getElementById("htmlDoc");
+        document.getElementById("switch").addEventListener("click", function () {
+            htmlTag.classList.toggle("dark");
+        })
+    </script>
+    <!-- =======  Dark-mode script End ======= -->
 </body>
 </html>
